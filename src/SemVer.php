@@ -42,7 +42,6 @@ readonly class SemVer extends Text
     /**
      * @throws ValueObjectInvalidArgumentException
      */
-    #[\Override]
     public function __construct(string|\Stringable $value)
     {
         $value = $this->trimVPrefix((string) $value);
