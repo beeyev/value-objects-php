@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Alexander Tebiev - https://github.com/beeyev
+ * @author Alexander Tebiev -  https://github.com/beeyev
  */
 declare(strict_types=1);
 
