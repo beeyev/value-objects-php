@@ -1,0 +1,17 @@
+{
+    "$schema": "vendor/infection/infection/resources/schema.json",
+    "source": {
+        "directories": [
+            "src"
+        ]
+    },
+    "testFramework": "phpunit",
+    "mutators": {
+        "@default": true,
+        "ProtectedVisibility": false
+    },
+    "logs": {
+        "text": ".coverage/infection/infections.log",
+        "html": ".coverage/infection/index.html"
+    }
+}

@@ -1,0 +1,26 @@
+# Alexander Tebiev - https://github.com/beeyev
+
+includes:
+	- ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
+	- ./vendor/phpstan/phpstan-strict-rules/rules.neon
+	- ./vendor/phpstan/phpstan-phpunit/extension.neon
+	- ./vendor/symplify/phpstan-rules/config/services/services.neon
+
+rules:
+	# Array method calls [$this, "method"] are not allowed. Use explicit method instead to help PhpStorm, PHPStan and Rector understand your code
+	- Symplify\PHPStanRules\Rules\Complexity\ForbiddenArrayMethodCallRule
+	# Multiple class/interface/trait is not allowed in single file
+	- Symplify\PHPStanRules\Rules\ForbiddenMultipleClassLikeInOneFileRule
+	# Use explicit return value over magic &reference
+	- Symplify\PHPStanRules\Rules\NoReferenceRule
+	# Change "%s()" method visibility to "%s" to respect parent method visibility.
+	- Symplify\PHPStanRules\Rules\PreventParentMethodVisibilityOverrideRule
+	# Constant "%s" must be uppercase
+	- Symplify\PHPStanRules\Rules\UppercaseConstantRule
+
+parameters:
+	level: max
+	treatPhpDocTypesAsCertain: false
+	paths:
+		- ./src/
+		- ./tests/

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+        bootstrap="./tests/bootstrap.php"
+        beStrictAboutOutputDuringTests="true"
+        failOnRisky="true"
+        colors="true"
+        failOnWarning="true"
+        cacheDirectory=".phpunit.cache"
+        requireCoverageMetadata="true"
+        beStrictAboutCoverageMetadata="true"
+>
+    <testsuites>
+        <testsuite name="Unit">
+            <directory>./tests/Unit/</directory>
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory>./src/</directory>
+        </include>
+    </source>
+    <php>
+        <ini name="error_reporting" value="-1"/>
+        <ini name="assert.exception" value="1"/>
+        <ini name="xdebug.show_exception_trace" value="0"/>
+    </php>
+</phpunit>

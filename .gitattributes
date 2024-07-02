@@ -1,0 +1,14 @@
+# Alexander Tebiev - https://github.com/beeyev
+
+* text=auto eol=lf
+
+.github/               export-ignore
+tests/                 export-ignore
+.editorconfig          export-ignore
+.gitattributes         export-ignore
+.gitignore             export-ignore
+.php-cs-fixer.dist.php  export-ignore
+infection.json.dist     export-ignore
+Makefile                export-ignore
+phpstan.neon.dist       export-ignore
+phpunit.xml.dist        export-ignore

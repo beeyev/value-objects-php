@@ -1,0 +1,56 @@
+{
+    "name": "beeyev/value-objects-php",
+    "description": "Immutable value objects for PHP, designed for Domain-Driven Design (DDD). Enhance your applications with expressive, reliable, and maintainable code.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "value objects",
+        "valueObject",
+        "ddd"
+    ],
+    "authors": [
+        {
+            "name": "Alexander Tebiev",
+            "email": "alexander.tebiev@gmail.com",
+            "homepage": "https://github.com/beeyev/"
+        }
+    ],
+    "homepage": "https://github.com/beeyev/value-objects-php",
+    "support": {
+        "issues": "https://github.com/beeyev/value-objects-php/issues",
+        "source": "https://github.com/beeyev/value-objects-php.git",
+        "docs": "https://github.com/beeyev/value-objects-php/",
+        "rss": "https://github.com/beeyev/value-objects-php/releases.atom"
+    },
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.59",
+        "infection/infection": "^0.29.5",
+        "kubawerlos/php-cs-fixer-custom-fixers": "^3.21",
+        "phpstan/phpstan": "^1.11",
+        "phpstan/phpstan-phpunit": "^1.4",
+        "phpstan/phpstan-strict-rules": "^1.6",
+        "phpunit/phpunit": "^11.2",
+        "symplify/phpstan-rules": "^13.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Beeyev\\ValueObject\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Beeyev\\ValueObject\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "infection/extension-installer": true
+        },
+        "sort-packages": true
+    }
+}
