@@ -18,7 +18,6 @@ readonly class Timestamp extends Integer
     /**
      * @throws ValueObjectInvalidArgumentException
      */
-    #[\Override]
     public function __construct(int $value)
     {
         parent::__construct($value);
