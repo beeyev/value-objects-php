@@ -25,7 +25,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        PHP_VERSION: ['7.4', '8.0', '8.1', '8.2', '8.3' ]
+        PHP_VERSION: ['8.2', '8.3' ]
     steps:
       - name: Check out code
         uses: actions/checkout@v4
@@ -53,7 +53,7 @@ jobs:
       - name: Prepare PHP Environment
         uses: ./.github/actions/prepare-php-environment/
         with:
-          PHP_VERSION: '7.4'
+          PHP_VERSION: '8.2'
           USE_COVERAGE: 'yes'
 
       - name: Unit Tests - Coverage Report
