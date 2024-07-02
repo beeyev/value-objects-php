@@ -23,7 +23,6 @@ readonly class Email extends Text
     /**
      * @throws ValueObjectInvalidArgumentException
      */
-    #[\Override]
     public function __construct(string|\Stringable $inputValue)
     {
         parent::__construct($inputValue);
