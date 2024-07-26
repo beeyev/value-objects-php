@@ -116,6 +116,7 @@ Represents a JSON string.
 
 ```php
 use Beeyev\ValueObject\Json;
+
 $json = new Json('{"name": "John", "age": 30}');
 echo $json->value;      // Output: '{"name": "John", "age": 30}'
 echo $json->toArray();  // Output: ['name' => 'John', 'age' => 30]
@@ -127,6 +128,7 @@ Represents a percentage integer value from 0 to 100.
 
 ```php
 use Beeyev\ValueObject\Percentage;
+
 $percentage = new Percentage(50);
 echo $percentage->value; // Output: 50
 ```
@@ -137,6 +139,7 @@ Represents a range of integer values.
 
 ```php
 use Beeyev\ValueObject\RangeInteger;
+
 $range = new RangeInteger(-5, 10);
 echo $range->start;   // Output: -5
 echo $range->end;     // Output: 10
