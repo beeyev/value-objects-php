@@ -167,8 +167,8 @@ use Beeyev\ValueObject\Resolution;
 
 // Only positive integers are allowed
 $resolution = new Resolution(1920, 1080);
-echo $resolution->width;  // Output: 1920
-echo $resolution->height; // Output: 1080
+echo $resolution->width;   // Output: 1920
+echo $resolution->height;  // Output: 1080
 $resolution->toArray();    // Array: [1920, 1080]
 echo (string) $resolution; // Output: '1920x1080'
 ```
@@ -204,7 +204,7 @@ $version1->equalTo($version2);     // false
 $version1->notEqualTo($version2);  // true
 
 $version1->greaterThanOrEqualTo($version2); // true
-$version1->lowerThanOrEqualTo($version2);  // false
+$version1->lowerThanOrEqualTo($version2);   // false
 ```
 
 ### Timestamp
@@ -215,9 +215,8 @@ Represents a unix timestamp.
 use Beeyev\ValueObject\Timestamp;
 
 $timestamp = new Timestamp(1631535600);
-echo $timestamp->value; // Output: 1631535600
-
-echo $timestamp->dateTime    // Returns DateTimeImmutable object
+echo $timestamp->value;   // Output: 1631535600
+echo $timestamp->dateTime // Returns DateTimeImmutable object
 ```
 
 ### Class string
@@ -266,10 +265,8 @@ use Beeyev\ValueObject\Text;
 use Beeyev\ValueObject\Exceptions\ValueObjectInvalidArgumentException;
 
 $text = new Text('Hello, World!');
-echo $text->value; // Output: 'Hello, World!'
-echo $text->value;   // Output: 'Hello, World!'
-echo (string) $text; // Output: 'Hello, World!'
-
+echo $text->value;    // Output: 'Hello, World!'
+echo (string) $text;  // Output: 'Hello, World!'
 echo $text->length(); // Output: 13
 
 // If you try to create an empty text object, an exception will be thrown
@@ -290,7 +287,6 @@ $boolean = new Boolean(true);
 // Supported values: 'true', 'false', '1', '0', 'yes', 'no', 'on', 'off'
 // $boolean = new Boolean('on');
 
-echo $boolean->value;    // Output: true
 echo $boolean->value;      // Output: true
 echo $boolean->toString(); // Output: 'true'
 echo (string) $boolean;    // Output: 'true'
@@ -305,7 +301,7 @@ $integer = new Integer(42);
 // It is also possible to create an integer object from a string
 // $integer = new Integer('42');
 
-echo $integer->value;    // Output: 42
+echo $integer->value; // Output: 42
 ```
 
 ### Positive Integer
@@ -352,9 +348,9 @@ $double = new Double(3.14);
 // It is also possible to create a double object from a string
 // $double = new Double('3.14');
 
-echo $double->value; // Output: 3.14
+echo $double->value;      // Output: 3.14
 echo $double->toString(); // Output: '3.14'
-echo (string) $double; // Output: '3.14'
+echo (string) $double;    // Output: '3.14'
 ```
 
 ## Common functionality
@@ -363,8 +359,8 @@ Every value object has the following functionality:
 
 ```php
 // Every value object can be cast to a string and supports \Stringable interface
-$vo->toString();  // Returns the value of the object as a string
-(string) $vo; // Returns the value of the object as a string
+$vo->toString(); // Returns the value of the object as a string
+(string) $vo;    // Returns the value of the object as a string
 
 // Value objects can be compared
 $vo1->sameAs($vo2);    // Returns true if the values are equal
