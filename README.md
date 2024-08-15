@@ -1,7 +1,7 @@
 # ValueObjects PHP Package 🫗
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/beeyev/value-objects-php)](https://packagist.org/packages/beeyev/value-objects-php)
-[![Supported PHP Versions](https://img.shields.io/packagist/dependency-v/beeyev/value-objects-php/php.svg)](https://packagist.org/packages/beeyev/value-objects-php)
+![Latest Version on Packagist](https://img.shields.io/packagist/v/beeyev/value-objects-php)
+![Supported PHP Versions](https://img.shields.io/packagist/dependency-v/beeyev/value-objects-php/php.svg)
 
 ## ℹ️ Introduction
 
