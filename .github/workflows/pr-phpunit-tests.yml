@@ -28,7 +28,7 @@ jobs:
         PHP_VERSION: ['8.2', '8.3' ]
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Prepare PHP Environment - PHP v${{ matrix.PHP_VERSION }}
         uses: ./.github/actions/prepare-php-environment/
@@ -48,7 +48,7 @@ jobs:
       || !startsWith(github.head_ref, 'code-style-fix/')
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Prepare PHP Environment
         uses: ./.github/actions/prepare-php-environment/
